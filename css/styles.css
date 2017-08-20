@@ -35,10 +35,6 @@ body {
     font-size: 30px;
 }
 
-.calculator_buttons input:nth-last-child(2) {
-    width: 120px;
-}
-
 .calculator_output input {
     width: 240px;
     height: 30px;

@@ -10,9 +10,9 @@
     <div class="calculator_wrapper">
         <form name="calculator" class="calculator">
             <div class="calculator_input">
-                <input name="input-x" placeholder="X">
+                <input type="number" name="input-x" placeholder="X" value="0">
                 <input name="operator" value = "+" disabled>
-                <input name="input-y" placeholder="Y">
+                <input type="number" name="input-y" placeholder="Y" value="0">
             </div>
             <div class="calculator_buttons">
                 <input type="button" name="7" value="7">
@@ -32,6 +32,7 @@
                 <br>
                 <input type="button" name="0" value="0">
                 <input type="button" name="calculate" value="=">
+                <input type="button" name="clean" value="C">
                 <input type="button" name="addition" value="+">
             </div>
             <div class="calculator_output">
@@ -41,8 +42,11 @@
     </div>
 
     <script src="js/libs/jquery-3.2.1.min.js"></script>
-    <script src="js/calculator/input.js"></script>
-    <script src="js/calculator/engine.js"></script>
-    <script src="js/calculator/output.js"></script>
+
+    <script src="js/calculator/mvc/calcModel.js"></script>
+    <script src="js/calculator/mvc/calcView.js"></script>
+    <script src="js/calculator/mvc/calcController.js"></script>
+
+    <script src="js/calculator/calcInit.js"></script>
 </body>
 </html>
